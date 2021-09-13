@@ -1,0 +1,592 @@
+@import url("https://use.typekit.net/wxv0mcu.css");
+
+.body {
+  font-family: museo-slab, serif;
+ .h2 {
+  font-family: museo-slab, serif !important;
+
+ }
+ .h3 {
+  font-family: museo-slab, serif !important;
+
+ }
+}
+.sec {  background-image: url("../images/kf_hg.svg");
+  font-family: museo-slab, serif;
+
+ }
+
+main {
+  background-color: $background;
+  font-family: museo-slab, serif;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  
+
+  
+
+  
+
+  .hero-description {
+    position: absolute;
+    font-family: museo-slab, serif;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+
+    .img-head {height:150px;
+      justify-content: flex-start;
+    }
+
+
+    h1 {
+      margin-top: 0px;
+      font-weight: bold;
+      font-family: museo-slab, serif;
+      font-size: 73px;
+    }
+
+    h1, h2 {
+      color: #f5e6ce;
+      font-family: museo-slab, serif;
+
+      text-shadow: 3px 3px 4px black;
+      @media screen and (max-width: 660px) {
+        font-size: 55px;
+        text-align: center;
+
+      }
+      @media screen and (max-width: 560px) {
+        font-size: 50px;
+        text-align: center;
+      }
+    }
+  }
+
+  .hero-image {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    -webkit-filter: hue-rotate(0deg) brightness(70%) grayscale(0%);
+    filter: hue-rotate(0deg) brightness(70%) grayscale(0%);
+
+  }
+  
+}
+
+.AnreiseLink {
+  color:white;
+  text-decoration: underline;
+}
+
+h2 {
+  @media screen and (min-width: 1024px) {
+    font-size: $xl-size;
+    font-family: museo-slab, serif;
+
+  }
+}
+
+.aktuell {
+  text-align: center;
+  // margin-top: 10px;
+  font-size: 33px;
+  color:#702138;
+}
+
+.intro {
+  font-family: museo-slab, serif;
+  font-size: 30px;
+  @media screen and (max-width: 1024px) {
+    padding: 50px;
+    font-size: 28px;
+  }
+  @media screen and (max-width: 750px) {
+    padding: 50px;
+    font-size: 24px;
+  }
+  @media screen and (max-width: 690px) {
+    padding: 20px;
+    font-size: 21px;
+  }
+  @media screen and (max-width: 555px) {
+    padding: 20px;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 455px) {
+    padding: 20px;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 405px) {
+    padding: 20px;
+    font-size: 15px;
+  }
+  @media screen and (max-width: 355px) {
+    padding: 20px;
+    font-size: 14px;
+  }
+}
+
+.container-anfang {
+  // background-color: green;
+  width: 90%;
+  max-width: 1200px;
+  height: 650px;
+  font-family: museo-slab, serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  @media screen and (min-width: 1024px) {
+    width: 80%;
+    height: 600px;
+  }
+  @media screen and (max-width: 750px) {
+    width: 80%;
+    height: 525px;
+  }
+  @media screen and (max-width: 690px) {
+    width: 80%;
+    height: 450px;
+  }
+  @media screen and (max-width: 555px) {
+    width: 80%;
+    height: 400px;
+  }
+  @media screen and (max-width: 455px) {
+    width: 90%;
+    height: 380px;
+  }
+  // @media screen and (max-width: 355px) {
+  //   width: 90%;
+  //   height: 0px;
+  // }
+
+}
+
+.container {
+  // background-color: green;
+  width: 90%;
+  max-width: 1200px;
+  font-family: museo-slab, serif;
+
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  
+  @media screen and (min-width: 1024px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 639px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 639px) {
+    width: 85%;
+  }
+  
+
+  .description{
+    text-align: center;
+    font-family: museo-slab, serif;
+
+    font-size: $ms-size;
+    padding: 80px 20px;
+    @media screen and (min-width: 768px) {
+      padding: 100px 120px;
+    }
+    @media screen and (min-width: 1024px) {
+      padding: 120px 140px;
+    }
+  }
+  .gallery-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+      "img1"
+      "img2";
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(2, 250px);
+    gap: 20px;
+    @media screen and (min-width: 640px) {
+      grid-template-areas: 
+      "img1 img3"
+      "img2 img3";
+      grid-template-columns: 1fr 1.5fr;
+      grid-template-rows: repeat(2, 300px);
+    }
+    .gallery-img1 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      grid-area: img1;
+    }
+    .gallery-img2 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      grid-area: img2;
+    }
+    .gallery-img3 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      grid-area: img3;
+      display: none;
+      @media screen and (min-width: 640px) {
+        display: block;
+      }
+    }
+  }
+  .about-grid {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    display: grid;
+    font-family: museo-slab, serif;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "h2"
+    "p";
+    @media screen and (min-width: 640px) {
+      grid-template-columns: 1fr 1.5fr;
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas: 
+    "h2 ."
+    ". p";
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+    }
+    h2 {
+      grid-area: h2;
+      text-align: center;
+      font-family: museo-slab, serif;
+
+      @media screen and (max-width: 1024px) {
+        font-size: $m-size;
+
+      }
+
+      @media screen and (min-width: 640px) {
+        margin-bottom: 0;
+        text-align: center;
+        font-size: $m-size;
+      }
+    }
+    p {
+      grid-area: p;
+    }
+  }
+  .about-grid2 {
+    margin-top: 60px;
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "h2"
+    "p";
+    @media screen and (min-width: 640px) {
+      grid-template-columns: 1.2fr 1.5fr;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: 
+    "h2 ."
+    ". p";
+    // " . button";
+    margin-top: 80px;
+    }
+    @media screen and (max-width: 600px) {
+    margin-top: 20px;
+    
+    }
+
+
+    h2 {
+      grid-area: h2;
+      @media screen and (min-width: 640px) {
+        margin-bottom: 0;
+        text-align: center;
+      }
+    }
+    p {
+      grid-area: p;
+      font-size: 23px;
+      font-family: museo-slab, serif;
+      font-weight: 500;
+      @media screen and (max-width: 600px) {
+        font-size: 18px;
+      }
+    }
+    button {
+      grid-area: button;
+      color: rgb(179, 24, 24);
+      height: 40px;
+      margin-left: 40px;
+
+      a {text-decoration: none;
+        font-family: museo-slab, serif;
+}
+    }
+
+  }
+}
+
+.react-parallax {
+  height: 800px;
+
+  @media (max-width: 768px) {
+    height: 500px;
+  }
+
+  @media (max-width: 520px) {
+    height: 400px;
+  }
+
+  @media (min-width: 1920px) {
+   height: 1080px;
+  }
+}
+
+
+.parallax1 {
+  background-image: url('../images/Fahr-Erlebnisse-459_rgb.jpg');
+  background-attachment: fixed;
+  background-position: 60% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  margin: 80px 0;
+  @media screen and (min-width:1024px) {
+    height: 800px;
+  }
+  @media screen and (min-width:1825px) {
+    height: 1080px;
+  }
+  @media screen and (max-width:625px) {
+    height: 550px;
+    // background-size: ;
+    background-image: url('../images/erlebnisse_hf.jpg');
+
+   
+
+  }
+}
+
+.parallax2 {
+  background-image: url('../images/Hofladen_AD_7551_rgb.jpg');
+  background-attachment: fixed;
+  background-position: 60% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  // margin: 80px 0;
+  @media screen and (min-width:1024px) {
+    height: 800px;
+  }
+  @media screen and (min-width:1825px) {
+    height: 1080px;
+  }
+  @media screen and (max-width:625px) {
+    height: 550px;
+    // object-fit: scale-down;
+    // background-image: url('../images/AD_7580_rgb_hofladen.jpg');
+
+  }
+}
+
+.parallax3 {
+  background-image: url('../images/Landing_Landwirtschaft1_AD_6497_rgb.jpg');
+  background-attachment: fixed;
+  background-position: 60% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  margin: 0px 0;
+  @media screen and (min-width:1024px) {
+    height: 800px;
+  }
+  @media screen and (min-width:1825px) {
+    height: 1080px;
+  }
+  @media screen and (max-width:625px) {
+    height: 550px;
+    // object-fit: scale-down;
+
+    // background-image: url('../images/test.jpg');
+
+  }
+}
+
+.parallax4 {
+  background-image: url('../images/Landing_Trotte_AD_6512_rgb.jpg');
+  background-attachment: fixed;
+  background-position: 60% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  margin: 0px 0;
+  @media screen and (min-width:1024px) {
+    height: 800px;
+  }
+  @media screen and (min-width:1825px) {
+    height: 1080px;
+  }
+  @media screen and (max-width:625px) {
+    height: 550px;
+    // background-image: url('../images/AD_7560_rgb_trotte.jpg');
+    // object-fit: scale-down;
+
+  }
+}
+
+.parallax5 {
+  background-image: url('../images/Landing_Gastro_AD_6588_rgb.jpg');
+  background-attachment: fixed;
+  background-position: 60% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  margin: 0px 0;
+  @media screen and (min-width:1024px) {
+    height: 800px;
+  }
+  @media screen and (min-width:1825px) {
+    height: 1080px;
+  }
+  @media screen and (max-width:625px) {
+    height: 550px;
+    // background-image: url('../images/AD_6600_gastro_hf.jpg');
+    // object-fit: scale-down;
+
+    
+  }
+}
+
+.parallax6 {
+  background-image: url('../images/Landing_uberUns_rgb_webs.jpg');
+  background-attachment: fixed;
+  background-position: 60% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  margin: 0px 0;
+  @media screen and (min-width:1024px) {
+    height: 800px;
+  }
+  @media screen and (min-width:1825px) {
+    height: 1080px;
+  }
+  @media screen and (max-width:625px) {
+    height: 550px;
+    // background-image: url('../images/uber_uns.jpg');
+    // object-fit: scale-down;
+
+   
+  }
+}
+
+.parallax7 {
+  background-image: url('../images/Landing_lastPrallax_AD_6613_rgb_web.jpg');
+  background-attachment: fixed;
+  background-position: 60% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  margin: 0px 0px 0px 0px;
+  @media screen and (min-width:1024px) {
+    height:800px;
+    // transform: matrix(1, 1, 1, 1, 20, 80);
+  }
+  @media screen and (min-width:1825px) {
+    height: 1080px;
+  }
+
+  @media screen and (max-width:625px) {
+    // background-image: url('../images/AD_6472_reservet.jpg');
+    // background-attachment: fixed;
+    // object-fit: scale-down;
+
+    height: 550px;
+
+  }
+}
+
+// .parallax8 {
+//   background-image: url('../images/coffee-landscape.jpg');
+//   background-attachment: fixed;
+//   background-position: 60% 50%;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 200px;
+//   margin: 0px 0;
+//   @media screen and (min-width:1024px) {
+//     height: 700px;
+//   }
+// }
+
+// .parallax9 {
+//   background-image: url('../images/coffee-landscape.jpg');
+//   background-attachment: fixed;
+//   background-position: 60% 50%;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 200px;
+//   margin: 0px 0;
+//   @media screen and (min-width:1024px) {
+//     height: 400px;
+//   }
+// }
+
+.top-map {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom:20px;
+  background-color: #7d8c60 !important;
+  color: white;
+  font-weight: 500;
+}
+
+.titel-link {
+  text-decoration: none;
+  font-family: museo-slab, serif;
+
+  color:black;
+  @media screen and (max-width: 500px) {
+    font-size: $ml-size;
+  }
+  &:hover {
+    color: #7d8c60;
+    text-decoration: none ;
+  }
+}
+
+.cont-desc {
+  @media screen and (max-width: 500px) {
+    font-size: 1rem !important;
+  }
+  @media screen and (max-width: 380px) {
+    font-size: 1rem !important;
+  }
+}
+
+.Toastify__toast-body {
+  font-family: museo-slab, serif !important;
+  font-size: 0.8rem;
+  color: #000;
+}
+
+.Toastify__progress-bar {
+  background: #dbc196 !important;
+}
+

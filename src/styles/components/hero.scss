@@ -1,0 +1,115 @@
+.hero {
+  background-attachment: fixed;
+  background-size: cover !important;
+  background-position: center center;
+  background-repeat: no-repeat !important;
+  height: 70vh;
+
+  :after {
+    background-color: rgba(31, 22, 22, 0.76);
+    z-index: 10;
+  }
+
+  .img-head {
+    width: auto;
+    justify-content: flex-start;
+    margin: 0 auto 20px auto;
+    
+  }
+
+  .img-head-home {
+    width: auto;
+    height: auto;
+    justify-content: flex-start;
+    margin: 0 auto 20px auto;
+    @media (max-width: 600px) {
+      width: 150px;
+      height: auto;
+    }
+
+  }
+  
+  .hero-content {
+    background: transparent;
+
+    .title {
+      font-weight: bold;
+      font-size: 3.75em;
+      color: #f5e6ce;
+      text-shadow: 2px 2px 4px #000;
+      font-family: museo-slab, serif;
+
+      $green: #28a745;
+     
+      &::-moz-selection {
+        background-color: $green;
+        color: #fff;
+      }
+
+      &::selection {
+        background-color: $green;
+        color: #fff;
+      }
+      
+      @media (max-width: 900px) {
+        font-size: 2.5em;
+      }
+    }
+
+    @media screen and (max-width: 990px) {
+      .title {
+        font-size: 3em;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      .title {
+        font-size: 2.5em;
+      }
+    }
+
+    .hero-subber {
+      color: #f5e6ce;
+      font-size: 2.25rem;
+      text-shadow: 2px 2px 3px #000;
+      font-weight: 600;
+      @media screen and (max-width: 600px) {
+        font-size: 1.5rem;
+      }
+      
+
+    }
+
+    .h-separator {
+      border-style: solid;
+      border-width: 1.8px;
+      width: 150px;
+    }
+
+    .hero-description {
+      color: rgba(#fff, 1);
+      font-size: 35px;
+      text-shadow: 1px 1px 2px #000;
+
+    }
+
+    .hero-buttons {
+      .btn {
+        margin: 5px;
+        width: 200px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .hero {
+    height: 120vh;
+  }
+}

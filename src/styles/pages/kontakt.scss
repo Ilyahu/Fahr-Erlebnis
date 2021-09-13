@@ -1,0 +1,91 @@
+
+.rinde {
+
+  .sub-titel-kontakt {
+    font-family: museo-slab, serif !important;
+
+    @media (max-width: 668px) {
+      font-size: 2rem;
+    }
+  }
+
+}
+
+
+.contact-form {
+
+  .form-item {
+    display: flex;
+    margin-bottom: 15px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    label {
+      width: 20%;
+      margin-right: 20px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    input {
+      width: 60%;
+      margin-top: 1px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    textarea {
+        width: 78%;
+
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+    }
+  }
+
+  button {
+    border-radius: 0;
+    transition: all .3s ease-out;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #2e566f;
+    border: 1px solid #2e566f;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    margin: 15px 0;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: calc(20% + 20px);
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
+  }
+
+  .privacy {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: calc(20% + 20px);
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
+
+    input {
+      cursor: pointer;
+    }
+
+    p {
+      margin: 0 0 0 15px;
+    }
+  }
+}

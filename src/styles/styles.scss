@@ -1,0 +1,21 @@
+@import './variables/variables';
+
+@import './components/footer';
+@import './components/header';
+@import './components/instagram';
+@import './components/menu';
+@import './components/leafletMap';
+@import './components/aktuellMessage';
+
+@import './pages/index';
+@import './pages/gastro';
+@import './pages/team';
+
+
+
+@import url("https://use.typekit.net/wxv0mcu.css");
+
+.h2{
+    font-family: museo-slab, serif !important;
+
+}
