@@ -7,11 +7,11 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { ToastContainer } from 'react-toastify'
+import { ToastContainer } from "react-toastify"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import '../styles/styles.scss'
+import "../styles/styles.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
